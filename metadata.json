@@ -1,0 +1,5 @@
+{
+  "name": "Simulador MHS - Auxiliar do Prof. Rodrigo",
+  "description": "Um laboratório virtual para explorar o Sistema Massa-Mola e sua relação com o Movimento Circular Uniforme (MCU). Visualize vetores de força, velocidade e aceleração em tempo real.",
+  "requestFramePermissions": []
+}
