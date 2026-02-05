@@ -6,32 +6,36 @@
     <title>Simulador MHS - Auxiliar do Prof. Rodrigo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-  /* Garante que o container principal ocupe a tela toda e respeite o layout */
-  #root {
-    display: block;
-    min-height: 100vh;
-  }
-  /* Previne que elementos do gráfico ou canvas estourem o layout original */
-  canvas, svg {
-    max-width: 100%;
-    height: auto !important;
-  }
-</style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "recharts": "https://esm.sh/recharts@^3.7.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+      /* Garante que o container principal ocupe a tela toda e respeite o layout */
+      #root {
+        display: block;
+        min-height: 100vh;
+      }
+      /* Previne que elementos do gráfico ou canvas estourem o layout original */
+      canvas, svg {
+        max-width: 100%;
+        height: auto !important;
+      }
+    </style>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4",
+        "recharts": "https://esm.sh/recharts@^3.7.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="/index.css">
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+
+    <script type="text/babel" data-type="module" src="/index.tsx"></script>
+  </body>
 </html>
