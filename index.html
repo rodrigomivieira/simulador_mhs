@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulador MHS - Auxiliar do Prof. Rodrigo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+  /* Garante que o container principal ocupe a tela toda e respeite o layout */
+  #root {
+    display: block;
+    min-height: 100vh;
+  }
+  /* Previne que elementos do gráfico ou canvas estourem o layout original */
+  canvas, svg {
+    max-width: 100%;
+    height: auto !important;
+  }
+</style>
   <script type="importmap">
 {
   "imports": {
